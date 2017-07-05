@@ -1,0 +1,22 @@
+<style>
+	    .center{
+	      text-align:center;
+	     }
+	
+	    .bluefont{
+	      color:blue;
+	      font-family:Libre-Franklin;
+	      font-size:32;
+	      text-align:center;
+	    }
+		   
+	    .big{
+		    font-size:30
+	            color:cyan;
+	    }
+	   
+	   
+	    body{
+		    	  background-image:url("http://dpzk.github.io/image/trollface.png");
+	    }
+</style>
