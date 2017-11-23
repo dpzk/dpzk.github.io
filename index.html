@@ -1,6 +1,34 @@
 <DOCTYPE html>
 <html>
 	<head>
+		<script>
+			function ethwt(){
+				for (i=1; i<=12; i++) {
+					document.getElementById(i).sytle.color='white';
+			  }
+			}
+			function ethwbl(){
+				for (i=1; i<=12; i++) {
+					document.getElementById(i).style.color='black';
+			  }
+			}
+			function whitebg(){
+				document.getElementById('bg').style.backgroundColor='white';
+					ethwbl();
+			}
+			function bluebg(){
+				document.getElementById('bg').style.backgroundColor='blue';
+				ethwt();
+			}
+			function greenbg(){
+				document.getElementById('bg').style.backgroundColor='green';
+				ethwt();
+			}
+			function redbg(){
+				document.getElementById('bg').style.backgroundColor='red';
+				ethwt();
+			}
+		</script>
 		<style>
 			.center{
 				text-align:center;
@@ -33,26 +61,26 @@
 	<!--DDDPDPDPDPPDPPZK-->
 	<body id="bg" style="background-color:#3399ff;">
 			<title>DPZK</title>
-			<h class="big">DPZK</h>
+			<h class="big" id="12">DPZK</h>
 			<br />
-			<div style="width:33%;float:left;color:#F00;border:1px solid;"><a href="https://gpjoe.gq" target="_blank">Joe's Personal Website</a></div>
-			<div style="width:33%;float:left;color:#F00;border:1px solid;"><a href="https://icreiuheciijc.github.io" target="_blank">Yose's Personal Website</a></div>
-			<div style="width:33%;float:right;color:#F00;border:1px solid;"><a href="https://www.ofs.edu.sg/user/anda_gu/" target="_blank">Andy's School Program</a></div>
+			<div style="width:33%;float:left;color:#F00;border:1px solid;"><a id="1" href="https://gpjoe.gq" target="_blank">Joe's Personal Website</a></div>
+			<div style="width:33%;float:left;color:#F00;border:1px solid;"><a id="2" href="https://icreiuheciijc.github.io" target="_blank">Yose's Personal Website</a></div>
+			<div style="width:33%;float:right;color:#F00;border:1px solid;"><a id="3" href="https://www.ofs.edu.sg/user/anda_gu/" target="_blank">Andy's School Program</a></div>
 	    <br />
 		  <br />
-		  <h class="big">PLAY THE GREAT PROGRAMMER YOSE'S NEW GAME: Snake</h>
-		  <h3><a href="https://icreiuheciijc.github.io/Snake/" target="_blank" style="color:white;">Snake!</a></h3><br/>
-			<h3 style="color:white;"> Support all platform!(assuming so lol)(not tested)</h3></br/>
-			<h3 style="color:white;"> Update: Awesome Icon!</h3></br/>
-		  <h class="big">Hacker Invansion ended</h><br />
-		  <h3 style="color:white;"> We are sorry for the inconvenience it caused. The hacker tom zhou will be punished. LOL</h3><br />
-			<h3 style="color:white;">OMG EVERY THING IS MESSED UP BY HIM</h3>
+		  <h class="big" id="4">PLAY THE GREAT PROGRAMMER YOSE'S NEW GAME: Snake</h>
+		  <h3><a href="https://icreiuheciijc.github.io/Snake/" target="_blank" style="color:white;" id="9">Snake!</a></h3><br/>
+			<h3 style="color:white;" id="5"> Support all platform!(assuming so lol)(not tested)</h3></br/>
+			<h3 style="color:white;" id="6"> Update: Awesome Icon!</h3></br/>
+		  <h class="big" id="11">Hacker Invansion ended</h><br />
+		  <h3 style="color:white;" id="7"> We are sorry for the inconvenience it caused. The hacker tom zhou will be punished. LOL</h3><br />
+			<h3 style="color:white;" id="8">OMG EVERY THING IS MESSED UP BY HIM</h3>
 		  <img src="/image/DPZK.jpeg" width="1024" height="1024"/>
-			<h1 class="BIG">Don't like the background color? CHANGE IT</h1>
-			<button type="button" onclick="document.getElementById('bg').style.backgroundColor='blue'">BLUE</button>
-			<button type="button" onclick="document.getElementById('bg').style.backgroundColor='red'">RED</button>
-			<button type="button" onclick="document.getElementById('bg').style.backgroundColor='green'">GREEN</button>
-			<button type="button" onclick="document.getElementById('bg').style.backgroundColor='white'">WHITE</button>
-			<button type="button" onclick="document.getElementById('bg').style.backgroundColor='#3399ff'">RESET</button>
+			<h1 class="big" id="10">Don't like the background color? CHANGE IT</h1>
+			<button type="button" onclick="bluebg()">BLUE</button>
+			<button type="button" onclick="redbg()">RED</button>
+			<button type="button" onclick="greenbg()">GREEN</button>
+			<button type="button" onclick="whitebg()">WHITE</button>
+			<button type="button" onclick="resetbg()">RESET</button>
 	</body>
 </html>
