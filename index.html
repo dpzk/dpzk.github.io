@@ -4,7 +4,7 @@
 		<script>
 			function ethwt(){
 				for (i=1; i<=12; i++) {
-					document.getElementById(i).sytle.color='white';
+					document.getElementById(i).style.color='white';
 			  }
 			}
 			function ethwbl(){
@@ -28,7 +28,11 @@
 				document.getElementById('bg').style.backgroundColor='red';
 				ethwt();
 			}
-		</script>
+			function resetbg(){
+				document.getElementById('bg').style.backgroundColor='#3399ff';
+				ethwt();
+			}
+					</script>
 		<style>
 			.center{
 				text-align:center;
