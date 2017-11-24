@@ -3,36 +3,44 @@
 	<head>
 		<script>
 			function ethwt(){
-				for (i=1; i<=12; i++) {
+				for (i=1; i<=14; i++) {
 					document.getElementById(i).style.color='white';
 			  }
-			}
-			function ethwbl(){
-				for (i=1; i<=12; i++) {
-					document.getElementById(i).style.color='black';
-			  }
-			}
-			function whitebg(){
-				document.getElementById('bg').style.backgroundColor='white';
+				}
+				function ethwbl(){
+					for (i=1; i<=14; i++) {
+						document.getElementById(i).style.color='black';
+				  }
+				}
+				function whitebg(){
+					document.getElementById('bg').style.backgroundColor='white';
+					document.getElementById("myText").value = "white";
 					ethwbl();
-			}
-			function bluebg(){
-				document.getElementById('bg').style.backgroundColor='blue';
-				ethwt();
-			}
-			function greenbg(){
-				document.getElementById('bg').style.backgroundColor='green';
-				ethwt();
-			}
-			function redbg(){
-				document.getElementById('bg').style.backgroundColor='red';
-				ethwt();
-			}
-			function resetbg(){
-				document.getElementById('bg').style.backgroundColor='#3399ff';
-				ethwt();
-			}
-					</script>
+				}
+				function bluebg(){
+					document.getElementById('bg').style.backgroundColor='blue';
+					document.getElementById("myText").value = "blue";
+					ethwt();
+				}
+				function greenbg(){
+					document.getElementById('bg').style.backgroundColor='green';
+					document.getElementById("myText").value = "green";
+					ethwt();
+				}
+				function redbg(){
+					document.getElementById('bg').style.backgroundColor='red';
+					document.getElementById("myText").value = "red";
+					ethwt();
+				}
+				function resetbg(){
+					document.getElementById('bg').style.backgroundColor='#3399ff';
+					document.getElementById("myText").value = "#3399ff";
+					ethwt();
+				}
+				function setclr(){
+						document.getElementById('bg').style.backgroundColor = document.getElementById("myText").value;
+				}
+			</script>
 		<style>
 			.center{
 				text-align:center;
@@ -86,5 +94,10 @@
 			<button type="button" onclick="greenbg()"><h5>GREEN</h5></button>
 			<button type="button" onclick="whitebg()"><h5>WHITE</h5></button>
 			<button type="button" onclick="resetbg()"><h5>RESET</h5></button>
+			<p id="13">OR SET IT URSELF</p>
+			<input type="text" id="myText" value="#3399ff">
+			<button type="button" onclick="setclr()">SET</button>
+			<br />
+			<p id="14">Note: wont change text color</p>
 	</body>
 </html>
