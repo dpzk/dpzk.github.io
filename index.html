@@ -3,31 +3,31 @@
 	<head>
 		<script>
 			function ethwt(){
-				for (i=1; i<=19; i++) {
+				for (i=1; i<=21; i++) {
 					document.getElementById(i).style.color='white';
 			  }
 				document.getElementById("myText1").value = document.getElementById('1').style.color;
 				}
 				function ethwbl(){
-					for (i=1; i<=19; i++) {
+					for (i=1; i<=21; i++) {
 						document.getElementById(i).style.color='black';
 				  }
 					document.getElementById("myText1").value = document.getElementById('1').style.color;
 				}
 				function ethgreen(){
-					for (i=1; i<=19; i++) {
+					for (i=1; i<=21;i++) {
 						document.getElementById(i).style.color='green';
 				  }
 					document.getElementById("myText1").value = document.getElementById('1').style.color;
 					}
 					function ethred(){
-						for (i=1; i<=19; i++) {
+						for (i=1; i<=21; i++) {
 							document.getElementById(i).style.color='red';
 					  }
 						document.getElementById("myText1").value = document.getElementById('1').style.color;
 					}
 					function ethblue(){
-						for (i=1; i<=19; i++) {
+						for (i=1; i<=21; i++) {
 							document.getElementById(i).style.color='blue';
 						}
 						document.getElementById("myText1").value = document.getElementById('1').style.color;
@@ -86,7 +86,12 @@
 			    text-align:center;
 			    left:-200px;
 		  }
-
+			.bigg{
+			    font-size:100;
+		      color:white;
+			    text-align:center;
+			    left:-200px;
+		  }
 		  a{
 				font-size:28;
 				color:white;
@@ -100,13 +105,15 @@
 	<!--DDDPDPDPDPPDPPZK-->
 	<body id="bg" style="background-color:#3399ff;">
 			<title>DPZK</title>
-			<h class="big" id="12">DPZK</h>
+			<h class="bigg" id="12">DPZK</h>
 			<br />
 			<div style="width:33%;float:left;color:#F00;border:1px solid;"><a id="1" href="https://gpjoe.gq" target="_blank">Joe's Personal Website</a></div>
 			<div style="width:33%;float:left;color:#F00;border:1px solid;"><a id="2" href="https://icreiuheciijc.github.io" target="_blank">Yose's Personal Website</a></div>
 			<div style="width:33%;float:right;color:#F00;border:1px solid;"><a id="3" href="https://www.ofs.edu.sg/user/anda_gu/" target="_blank">Andy's School Program</a></div>
 	    <br />
 		  <br />
+			<br />
+			<br />
 		  <h class="big" id="4">PLAY THE GREAT PROGRAMMER YOSE'S NEW GAME: Snake</h>
 		  <h3><a href="https://icreiuheciijc.github.io/Snake/" target="_blank" style="color:white;" id="9">Snake!</a></h3><br/>
 			<h3 style="color:white;" id="5"> Support all platform!(assuming so lol)(not tested)</h3></br/>
@@ -117,10 +124,10 @@
 		  <img src="/image/DPZK.jpeg" width="1024" height="1024"/>
 			<table style="width:100%">
 			<br />
-			<h1 class="big">DPZK COSTOMIZER</h1>
+			<h1 class="big" id="20">DPZK COSTOMIZER</h1>
 				<tr>
 					<th>
-						<h class="big" id="10">Don't like the background color? CHANGE IT</h>
+						<h class="big" id="10">Don't like the background color? CHANGE IT</h><br />
 						<button type="button" onclick="bluebg()"><h5>BLUE</h5></button>
 						<button type="button" onclick="redbg()"><h5>RED</h5></button>
 						<button type="button" onclick="greenbg()"><h5>GREEN</h5></button>
@@ -134,12 +141,13 @@
 						<p id="14" style="color:white;">Note: won't automatically change text color to fit background</p>
 					</th>
 					<th>
-						<h class="big" id="15">Don't like the text color? Or in case you can't see. CHANGE THE TEXT COLOR</h>
+						<h class="big" id="15">Don't like the text color? Or in case you can't see. CHANGE THE TEXT COLOR</h><br />
 						<button type="button" onclick="ethblue()"><h5>TEXT:BLUE</h5></button>
 						<button type="button" onclick="ethred()"><h5>TEXT:RED</h5></button>
 						<button type="button" onclick="ethgreen()"><h5>TEXT:GREEN</h5></button>
 						<button type="button" onclick="ethwt()"><h5>TEXT:WHITE</h5></button>
 						<button type="button" onclick="ethwbl()"><h5>TEXT:black</h5></button>
+						<p id="21" style="color:white;">Note: won't automatically change text color to fit background</p>
 						<p id="16" style="color:white;">OR SET IT URSELF</p>
 						<p id="18" style="color:white;">Type hex color code or color name</p>
 						<input type="text" id="myText1" value="white">
