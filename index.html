@@ -3,15 +3,35 @@
 	<head>
 		<script>
 			function ethwt(){
-				for (i=1; i<=14; i++) {
+				for (i=1; i<=19; i++) {
 					document.getElementById(i).style.color='white';
 			  }
+				document.getElementById("myText1").value = document.getElementById('1').style.color;
 				}
 				function ethwbl(){
-					for (i=1; i<=14; i++) {
+					for (i=1; i<=19; i++) {
 						document.getElementById(i).style.color='black';
 				  }
+					document.getElementById("myText1").value = document.getElementById('1').style.color;
 				}
+				function ethgreen(){
+					for (i=1; i<=19; i++) {
+						document.getElementById(i).style.color='green';
+				  }
+					document.getElementById("myText1").value = document.getElementById('1').style.color;
+					}
+					function ethred(){
+						for (i=1; i<=19; i++) {
+							document.getElementById(i).style.color='red';
+					  }
+						document.getElementById("myText1").value = document.getElementById('1').style.color;
+					}
+					function ethblue(){
+						for (i=1; i<=19; i++) {
+							document.getElementById(i).style.color='blue';
+						}
+						document.getElementById("myText1").value = document.getElementById('1').style.color;
+					}
 				function whitebg(){
 					document.getElementById('bg').style.backgroundColor='white';
 					document.getElementById("myText").value = "white";
@@ -38,7 +58,14 @@
 					ethwt();
 				}
 				function setclr(){
-						document.getElementById('bg').style.backgroundColor = document.getElementById("myText").value;
+									for (i=1; i<=19; i++) {
+						document.getElementById(i).style.color = document.getElementById("myText1").value;
+					}
+				}
+				function settxtclr(){
+									for (i=1; i<=19; i++) {
+						document.getElementById(i).style.color = document.getElementById("myText1").value;
+					}
 				}
 			</script>
 		<style>
@@ -88,16 +115,39 @@
 		  <h3 style="color:white;" id="7"> We are sorry for the inconvenience it caused. The hacker tom zhou will be punished. LOL</h3><br />
 			<h3 style="color:white;" id="8">OMG EVERY THING IS MESSED UP BY HIM</h3>
 		  <img src="/image/DPZK.jpeg" width="1024" height="1024"/>
-			<h1 class="big" id="10">Don't like the background color? CHANGE IT</h1>
-			<button type="button" onclick="bluebg()"><h5>BLUE</h5></button>
-			<button type="button" onclick="redbg()"><h5>RED</h5></button>
-			<button type="button" onclick="greenbg()"><h5>GREEN</h5></button>
-			<button type="button" onclick="whitebg()"><h5>WHITE</h5></button>
-			<button type="button" onclick="resetbg()"><h5>RESET</h5></button>
-			<p id="13">OR SET IT URSELF</p>
-			<input type="text" id="myText" value="#3399ff">
-			<button type="button" onclick="setclr()">SET</button>
+			<table style="width:100%">
 			<br />
-			<p id="14">Note: wont change text color</p>
+			<h1 class="big">DPZK COSTOMIZER</h1>
+				<tr>
+					<th>
+						<h class="big" id="10">Don't like the background color? CHANGE IT</h>
+						<button type="button" onclick="bluebg()"><h5>BLUE</h5></button>
+						<button type="button" onclick="redbg()"><h5>RED</h5></button>
+						<button type="button" onclick="greenbg()"><h5>GREEN</h5></button>
+						<button type="button" onclick="whitebg()"><h5>WHITE</h5></button>
+						<button type="button" onclick="resetbg()"><h5>RESET</h5></button>
+						<p id="13" style="color:white;">OR SET IT URSELF</p>
+						<p id="19" style="color:white;">Type hex color code or color name</p>
+						<input type="text" id="myText" value="#3399ff">
+						<button type="button" onclick="setclr()">SET</button>
+						<br />
+						<p id="14" style="color:white;">Note: won't automatically change text color to fit background</p>
+					</th>
+					<th>
+						<h class="big" id="15">Don't like the text color? Or in case you can't see. CHANGE THE TEXT COLOR</h>
+						<button type="button" onclick="ethblue()"><h5>TEXT:BLUE</h5></button>
+						<button type="button" onclick="ethred()"><h5>TEXT:RED</h5></button>
+						<button type="button" onclick="ethgreen()"><h5>TEXT:GREEN</h5></button>
+						<button type="button" onclick="ethwt()"><h5>TEXT:WHITE</h5></button>
+						<button type="button" onclick="ethwbl()"><h5>TEXT:black</h5></button>
+						<p id="16" style="color:white;">OR SET IT URSELF</p>
+						<p id="18" style="color:white;">Type hex color code or color name</p>
+						<input type="text" id="myText1" value="white">
+						<button type="button" onclick="settxtclr()">SET</button>
+						<br />
+						<p id="17" style="color:white;">Note: won't automatically change text color to fit background</p>
+					</th>
+				</tr>
+			</table
 	</body>
 </html>
